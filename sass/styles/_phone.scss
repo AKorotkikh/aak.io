@@ -1,0 +1,52 @@
+@media (max-width: 599px) {
+    
+    div#nav-wrapper {    
+        width: 100%;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin: 40px auto auto auto;
+        // background-color: yellow;
+    }
+
+    nav {
+        display: table;
+        // background-color: black;
+        margin: 10px auto 10px auto;
+
+        #nav-row {
+            
+            display: table;
+            border-collapse: collapse;
+            font-family: $font-stack;
+            font-weight: 700;
+            width: 85%;
+            height: 40px;
+            
+            margin: auto;
+            
+            border-spacing: 5px;
+        }
+
+        a {
+            margin: auto;
+            display: table-row;
+            // background-color: green;
+            width: 80%;
+
+            border-left: 0px;
+            border-right: 0px;
+            border-top: 1px solid $color-primary;
+            border-bottom: 1px solid $color-primary;
+        }
+
+        a:first-child {
+            border-top: 0px;
+        }
+
+        a:last-child {
+            border-bottom: 0px;
+        }
+    }
+}

@@ -1,0 +1,125 @@
+@import 'reset';
+@import 'mixins';
+
+$color-bg: #694F91;
+$color-primary: #8E79AE;
+$font-stack: 'Open Sans Condensed', sans-serif;
+
+body {
+    font-family: $font-stack;
+    font-size: small;
+    margin: 0px;
+    color: white;
+    font-weight: 300;
+    background: $color-bg; 
+    padding: 0px;
+}
+
+a {
+    margin: 0px;
+    padding: 0px;
+}
+
+header#top-head {
+    margin: 20px;
+    /*background-color: black;*/
+    width: 250px;
+    text-align: right;
+
+    h1 {
+        margin-bottom: 0px;
+        /*margin: 5px;
+        display: inline;*/
+    }
+
+    p {
+        // margin-top: 0px;
+        margin: 0px 0px 0px 24.5px;
+        /*display: inline;*/
+        font-size: 1.7em;
+    }
+}
+
+div#nav-wrapper {
+    
+    width: 100%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin: 40px auto auto auto;
+}
+
+#content {
+    width: 80%;
+    /*height: 600px;*/
+    padding: 20px;
+    margin: auto;
+    /*border-top: 10px solid #50608F;*/
+}
+
+
+
+nav {
+    display: table;
+    border-collapse: collapse;
+    font-family: $font-stack;
+    font-weight: 700;
+    width: 85%;
+    height: 40px;
+    margin: 30px auto;
+    // background-color: black;
+    border-spacing: 5px;
+
+    #nav-row {
+        display: table-row;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 1.7em;
+        color: white;
+        width: 25%;
+        text-align: center;
+        display: table-cell;
+        border-left: 1px solid $color-primary;
+        border-right: 1px solid $color-primary;
+        transition: all 0.3s ease 0s;
+        // background-color: green;
+    }
+
+    a:hover {
+        background-color: $color-primary;
+    }    
+
+
+}
+
+.current {
+    border-top: 3px solid white;
+}
+
+
+.shadow {
+    -webkit-box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.75);
+       -moz-box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.75);
+}
+
+footer {
+    margin: auto;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+/*.lines {
+    background: repeating-linear-gradient(
+    45deg,
+    #606dbc,
+    #606dbc 10px,
+    #465298 10px,
+    #465298 20px);
+}
+*/
+
+// Media queries
+@import 'tablet';
+@import 'phone';
